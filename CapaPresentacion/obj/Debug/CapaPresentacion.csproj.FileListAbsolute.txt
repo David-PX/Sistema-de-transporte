@@ -18,3 +18,7 @@ C:\Users\David\source\repos\TRANSPORTE\CapaPresentacion\obj\Debug\CapaPresentaci
 C:\Users\David\source\repos\TRANSPORTE\CapaPresentacion\bin\Debug\Bunifu_UI_v1.52.dll
 C:\Users\David\source\repos\TRANSPORTE\CapaPresentacion\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
 C:\Users\David\source\repos\TRANSPORTE\CapaPresentacion\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\David\source\repos\TRANSPORTE\CapaPresentacion\obj\Debug\CapaPresentacion.frmChoferes.resources
+C:\Users\David\source\repos\TRANSPORTE\CapaPresentacion\obj\Debug\CapaPresentacion.frmAutobuses.resources
+C:\Users\David\source\repos\TRANSPORTE\CapaPresentacion\obj\Debug\CapaPresentacion.frmRutas.resources
+C:\Users\David\source\repos\TRANSPORTE\CapaPresentacion\obj\Debug\CapaPresentacion.frmViajes.resources

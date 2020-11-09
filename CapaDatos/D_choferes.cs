@@ -15,6 +15,9 @@ namespace CapaDatos
     public class D_choferes
     {
         SqlConnection conexion = new SqlConnection(ConfigurationManager.ConnectionStrings["conectar"].ConnectionString);
+
+
+       
         public List<E_choferes> ListarChoferes(string buscar)
         {
             SqlDataReader leerFilas;
@@ -34,7 +37,7 @@ namespace CapaDatos
                     CEDULA = leerFilas.GetString(3),
                     FECHA_NACIMIENTO = leerFilas.GetDateTime(4)
 
-                });
+                }) ;
 
 
             }
@@ -66,7 +69,7 @@ namespace CapaDatos
             SqlCommand cmd = new SqlCommand("SP_EDITARCHOFER", conexion);
             cmd.CommandType = CommandType.StoredProcedure;
             conexion.Open();
-            cmd.Parameters.AddWithValue("@IDCATEGORIA", chofer.ID);
+            cmd.Parameters.AddWithValue("@ID", chofer.ID);
             cmd.Parameters.AddWithValue("@NOMBRE", chofer.NOMBRE);
             cmd.Parameters.AddWithValue("@APELLIDO", chofer.APELLIDO);
             cmd.Parameters.AddWithValue("@CEDULA", chofer.CEDULA);
@@ -80,7 +83,7 @@ namespace CapaDatos
             SqlCommand cmd = new SqlCommand("SP_ELIMINARCHOFER", conexion);
             cmd.CommandType = CommandType.StoredProcedure;
             conexion.Open();
-            cmd.Parameters.AddWithValue("@IDCATEGORIA", chofer.ID);
+            cmd.Parameters.AddWithValue("@ID", chofer.ID);
 
             cmd.ExecuteNonQuery();
             conexion.Close();

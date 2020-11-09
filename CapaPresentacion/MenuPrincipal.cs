@@ -31,7 +31,7 @@ namespace CapaPresentacion
 
         private void MenuPrincipal_Load(object sender, EventArgs e)
         {
-            
+            PantallaOk();
         }
 
         private void salir_Click(object sender, EventArgs e)
@@ -54,6 +54,49 @@ namespace CapaPresentacion
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new frmViajes());
+        }
+
+        private void sidebar_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private Form formActivado = null;
+
+        private void AbrirFormulario(Form formHijo)
+        {
+            if (formActivado != null)
+                formActivado.Close();
+            formActivado = formHijo;
+            formHijo.TopLevel = false;
+            formHijo.Dock = DockStyle.Fill;
+            central.Controls.Add(formHijo);
+            central.Tag = formHijo;
+            formHijo.BringToFront();
+            formHijo.Show();
+
+
+            
+        }
+
+        private void btnChoferes_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new frmChoferes());
+        }
+
+        private void btnAutobuses_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new frmAutobuses());
+        }
+
+        private void btnRutas_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new frmRutas());
         }
     }
 }

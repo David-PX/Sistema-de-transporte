@@ -53,11 +53,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAutobuses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAutobuses.Designer.cs">
+      <DependentUpon>frmAutobuses.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmChoferes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmChoferes.Designer.cs">
       <DependentUpon>frmChoferes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRutas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRutas.Designer.cs">
+      <DependentUpon>frmRutas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViajes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViajes.Designer.cs">
+      <DependentUpon>frmViajes.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuPrincipal.cs">
       <SubType>Form</SubType>
@@ -67,6 +85,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAutobuses.resx">
+      <DependentUpon>frmAutobuses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChoferes.resx">
+      <DependentUpon>frmChoferes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRutas.resx">
+      <DependentUpon>frmRutas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViajes.resx">
+      <DependentUpon>frmViajes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
